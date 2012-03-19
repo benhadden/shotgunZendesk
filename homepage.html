@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+
+<title>Shotgun Support</title>
+
+<link rel="stylesheet" type="text/css" href="widgets/icons.css" />
+<link rel="stylesheet" type="text/css" href="widgets/homepage.css" />
+
+</head>
+
+<body>
+
+<!-- Copy text below this comment up until the last </div> and paste into the Introductory Text widget on the Zendesk homepage -->
+
+<div class="sg_welcome_container">
+
+<!-- Right Pane -->
+
+<div class="sg_right_pane">
+<div class="sg_right_pane_background"
+
+<!-- Feature Requests -->
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_feature_requests" href="/forums/31278">Feature requests</a>
+	<p class="sg_welcome_description">Have you ever found yourself saying, “It would be awesome if Shotgun could...”?  Head over to our feature requests forum to post an idea or vote on others <a class="sg_welcome_link" href="/forums/31278">»»</a>
+	</p>
+</div>
+
+<!-- FAQs 
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_title_faqs" href="http://benhadden.zendesk.com/forums/20374571">FAQs</a>
+	<p class="sg_welcome_description">Have a question that we may have already answered?  Search our FAQs and find out! <a class="sg_welcome_link" href="http://benhadden.zendesk.com/forums/20374571">»»</a>
+	</p>
+</div>
+
+-->
+
+<!-- Ask for Help -->
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_ask_for_help" href="/anonymous_requests/new">Ask for Help</a>
+	<p class="sg_welcome_description">Tried your best to ask the community and browse our existing documentation but still stuck?  Send us a support request and we’ll unstick you <a class="sg_welcome_link" href="/anonymous_requests/new">»»</a>
+	</p>
+</div>
+
+</div>
+</div> <!-- Right Pane -->
+
+<!-- Left Pane -->
+
+<div class="sg_left_pane">
+
+<!-- Getting Started -->
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_getting_started" href="/entries/20748403">Getting started</a>
+	<p class="sg_welcome_description">New to Shotgun?  Head over here to learn what Shotgun is about and how to make the most of your 30-day trial <a class="sg_welcome_link" href="/entries/20748403">»»</a>
+	</p>
+</div>
+
+<!-- How Tos -->
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_how_tos" href="/categories/23">How-tos</a>
+	<p class="sg_welcome_description">Ready to dive deeper?  Check out our growing list of how-tos to learn about best practices for becoming a Shotgun power user at your studio <a class="sg_welcome_link" href="/categories/23">»»</a>
+	</p>
+</div>
+
+<!-- Developers -->
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_developers" href="https://github.com/shotgunsoftware/python-api/wiki">Developers</a>
+	<p class="sg_welcome_description">There's a special place for you in our hearts...and on GitHub.  Head over there for the <a class="sg_welcome_link" href="https://github.com/shotgunsoftware/python-api">Shotgun Python API</a> and <a class="sg_welcome_link" href="https://github.com/shotgunsoftware/python-api/wiki">Docs</a> <a class="sg_welcome_link" href="https://github.com/shotgunsoftware/python-api/wiki">»»</a>
+	</p>
+</div>
+
+</div> <!-- Left Pane -->
+
+<!-- Middle Pane -->
+
+<div class="sg_left_pane">
+
+<!-- Videos 
+
+<div class="sg_welcome_section">
+	<a class="sg_welcome_title sg_icon_videos" href="https://www.shotgunsoftware.com/tutorials">Videos</a>
+	<p class="sg_welcome_description">In the mood to sit back and just watch some Shotgun tutorial videos?  Head over here for the full collection. <a class="sg_welcome_link" href="https://www.shotgunsoftware.com/tutorials">»»</a>
+	</p>
+</div>
+
+-->
+
+<!-- Updates -->
+
+<div class="sg_welcome_section sg_welcome_section_latest_news">
+	<a class="sg_welcome_title sg_icon_latest_news" href="/categories/26">Latest news</a>
+	
+	<!-- Zendesk Articles -->
+	
+	<script type="text/javascript" src="https://support.shotgunsoftware.com/forums/55639/entries.json?callback=zendeskReleasesCallback"></script>
+	<a class="sg_icon_zendesk sg_update_source" href="/forums/55639">Forums</a>
+	<p><a id="sg_zendesk_post" class="sg_update_post" href="/forums/55639">Click for our latest forum post.</a></p>
+	<script type="text/javascript">
+	function zendeskReleasesCallback(o) {
+	o = o[0]; // o is always an array, so just get the first (and only entry)
+	var e = document.getElementById('sg_zendesk_post');
+	e.innerHTML = o.title;
+	e.href = '/entries/' + o.id.toString();
+	}
+	</script>
+	
+	<!-- Tweets -->
+	
+	<script type="text/javascript" src="https://twitter.com/statuses/user_timeline/shotgunsoftware.json?callback=twitterShotgunSoftwareCallback&amp;count=5"></script>
+	<a class="sg_icon_twitter sg_update_source" href="https://twitter.com/#!/shotgunsoftware/">@shotgunsoftware</a>
+	<p><a id="sg_twitter_shotgunsoftware_post" class="sg_update_post" href="https://twitter.com/#!/shotgunsoftware/">Click for our latest tweet.</a></p>
+	<script type="text/javascript">
+	function twitterShotgunSoftwareCallback(o) {
+	o = o[0]; // o is always an array, so just get the first (and only entry)
+	var e = document.getElementById('sg_twitter_shotgunsoftware_post');
+	e.innerHTML = o.text;
+	e.href = 'https://twitter.com/#!/shotgunsoftware/status/' + o.id_str;
+	}
+	</script>
+	
+	<script type="text/javascript" src="https://twitter.com/statuses/user_timeline/shotgunsupport.json?callback=twitterShotgunSupportCallback&amp;count=5"></script>
+	<a class="sg_icon_twitter sg_update_source" href="https://twitter.com/#!/shotgunsupport/">@shotgunsupport</a>
+	<p><a id="sg_twitter_shotgunsupport_post" class="sg_update_post" href="https://twitter.com/#!/shotgunsupport/">Click for our latest tweet.</a></p>
+	<script type="text/javascript">
+	function twitterShotgunSupportCallback(o) {
+	o = o[0]; // o is always an array, so just get the first (and only entry)
+	var e = document.getElementById('sg_twitter_shotgunsupport_post');
+	e.innerHTML = o.text;
+	e.href = 'https://twitter.com/#!/shotgunsupport/status/' + o.id_str;
+	}
+	</script>
+	
+	<!-- Tumblr Posts -->
+	
+	<script type="text/javascript" src="https://www.shotgunsoftware.com/blog/updates.js"></script>
+	<a class="sg_icon_tumblr sg_update_source" href="http://blog.shotgunsoftware.com">Blog</a>
+	<p><a id="sg_tumblr_post" class="sg_update_post" href="http://blog.shotgunsoftware.com">Click for our latest blog post.</a></p>
+	<script type="text/javascript">
+	function tumblrCallback(o) {
+	o = o.posts[0]; // o is always an array, so just get the first (and only entry)
+	var e = document.getElementById('sg_tumblr_post');
+	e.innerHTML = o["regular-title"];
+	e.href = o.url;
+	}
+	</script>
+</div>
+
+</div> <!-- Middle Pane -->
+
+</div>
+
+</body>
+
+</html>

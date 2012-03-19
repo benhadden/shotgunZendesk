@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------------------------
+# These files are used to customize the look of support.shotgunsoftware.com
+#
+# Maintained by: Ben at Shotgun Software (benhadden@shotgunsoftware.com)
+# ---------------------------------------------------------------------------------------------
+
+Home Page
+
+The homepage is customized by copy and pasting the contents of homepage.html into the Introducty Text section of the Zendesk home page.
+
+Widgets
+
+All snippets of code in the widgets folder were added as widgets in the Manage > Extensions > Widgets section of Zendesk.
+
+Icons
+
+Any custom icons were first uploaded to Zendesk by creating a new Ticket and adding the icon as an attachement.  Without submitting the Ticket, you can copy the link of the uploaded file for use anywhere on the site.  All icon paths are stored in the icons.css CSS Widget.

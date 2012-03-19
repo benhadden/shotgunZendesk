@@ -1,0 +1,22 @@
+.sg_sidebar_title {
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	padding-right: 0px;
+	padding-left: 45px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	height: 24px;
+	font-weight: bold;
+	margin: 0px;
+	font-size: 18px;
+	color: #555555;
+}
+
+.sg_sidebar_icon {
+	padding-right: 0px;
+	padding-left: 45px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}

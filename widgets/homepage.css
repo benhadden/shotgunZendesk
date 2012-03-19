@@ -1,0 +1,95 @@
+div.sg_welcome_container {
+	height: 420px;
+	width: 1165px;
+	padding-right: 20px;
+	font-family: "Helvetica Neue";
+	overflow:hidden;
+}
+
+div.sg_right_pane {
+	height: 420px;
+	width: 360px;
+	float: right;
+}
+
+div.sg_right_pane_background {
+	background-color: #cccccc;
+	height: 280px;
+	width: 360px;
+	border-radius: 10px;
+}
+
+div.sg_left_pane {
+	float: left;
+	height: 420px;
+	width: 360px;
+}
+
+div.sg_welcome_section {
+	padding: 20px 0px 20px 20px;
+	float: left;
+	height: 100px;
+	width: 340px;
+	font-size: 14px;
+}
+
+div.sg_welcome_section_latest_news {
+	height: 300px;
+}
+
+a.sg_welcome_title {
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	padding-right: 0px;
+	padding-left: 45px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	height: 24px;
+	font-weight: bold;
+	margin: 0px;
+	font-size: 22px;
+	color: black;
+}
+
+p.sg_welcome_description {
+	font-size: 14px;
+	line-height: 15px;
+	margin: 12px 20px 12px 0;
+}
+
+a.sg_welcome_link {
+	color: black;
+	font-weight: bold;
+}
+
+a.sg_update_post {
+	margin-left: 30px;
+	margin-top: 10px;
+	display: block;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	min-height: 20px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #333333;
+	line-height: 15px;
+	font-size: 14px;
+}
+
+a.sg_update_source {
+	font-weight: bold;
+	margin-top: 20px;
+	display: block;
+	padding-right: 0px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	min-height: 20px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #336699;
+	line-height: 15px;
+	font-size: 14px;
+}

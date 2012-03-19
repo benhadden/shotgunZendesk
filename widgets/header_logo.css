@@ -1,0 +1,36 @@
+/* Hide the Zendesk logo and help desk title text */
+#table_header {
+	display: none;
+}
+
+/* Increase the size of the header, add a logo, set background color */
+#header {
+	height: 75px;
+	background-image: url('/attachments/token/fezgdqfvqp5m5es/?name=shotgun_support_header_logo.png');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	background-color:#000000; /* black */
+}
+
+/* Setting the #top background color removes the
+ 1 px white line above the menu bar */
+#top {
+    background:#000000; /* black */
+}
+
+/* Set properties of new div for logo link */
+/* Inserted via JS Widget */
+/* Must match the H and W of the logo image */
+#header2 a { 
+	display: block; 
+	height: 25px; 
+	width: 195px; 
+	position: relative; 
+	top: 25px; 
+	left: 15px 
+} 
+
+#header2 a span { 
+	visibility: hidden; 
+}
